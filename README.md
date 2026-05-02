@@ -3,6 +3,12 @@
 
 A reusable Avalonia dialog library with up to three configurable buttons and four icon themes.
 
+<img width="1131" height="386" alt="image" src="https://github.com/user-attachments/assets/38bb72c0-aa54-439a-a91b-1ef470124786" />
+
+
+I use this extensively in my Gamelist Manager application.  I included the button style which you may wish to use for other buttons as well to give them different colors and a nicer appearance.
+
+
 ## Usage
 
 Reference the project or DLL, then call the static `ShowAsync`:

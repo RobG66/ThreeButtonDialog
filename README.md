@@ -7,6 +7,8 @@ A reusable Avalonia dialog library with up to three configurable buttons and fou
 
 
 
+
+
 I use this extensively in my Gamelist Manager application.  I included the button style which you may wish to use for other buttons as well to give them different colors and a nicer appearance.
 
 

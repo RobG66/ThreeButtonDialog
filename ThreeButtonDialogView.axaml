@@ -1,0 +1,49 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="ThreeButtonDialog.ThreeButtonDialogView"
+        Title="Confirm"
+        MinWidth="450"
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterOwner"
+        CanResize="False">
+
+    <Window.Styles>
+        <StyleInclude Source="avares://ThreeButtonDialog/Styles/ButtonStyle.axaml"/>
+    </Window.Styles>
+
+    <StackPanel Margin="20" Spacing="16">
+        <StackPanel Orientation="Horizontal" Spacing="12">
+            <Border x:Name="IconBorder"
+                    CornerRadius="20"
+                    Width="40"
+                    Height="40"
+                    VerticalAlignment="Top">
+                <Image x:Name="IconDisplay" Width="24" Height="24"
+                       HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+
+            <StackPanel Spacing="8" VerticalAlignment="Center">
+                <TextBlock x:Name="MessageText"
+                           FontSize="14"
+                           FontWeight="SemiBold"
+                           TextWrapping="Wrap"
+                           MaxWidth="400"/>
+                <TextBlock x:Name="DetailText"
+                           FontSize="12"
+                           FontWeight="Medium"
+                           TextWrapping="Wrap"
+                           MaxWidth="400"
+                           IsVisible="False"/>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    Spacing="10"
+                    Margin="0,8,0,0">
+            <Button x:Name="Button1" Click="Button1_Click" Classes="rounded grey"/>
+            <Button x:Name="Button2" Click="Button2_Click" Classes="rounded yellow"/>
+            <Button x:Name="Button3" Click="Button3_Click" Classes="rounded green"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
